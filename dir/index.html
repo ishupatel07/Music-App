@@ -1,15 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-black">
-    <h1 class="text-white ">hello world</h1>
 
-    <script src="app.js"></script>
+<body class="bg-[#182525] relative">
+    <div class="main-container flex justify-center items-center h-screen ">
+        <div class="wrapper bg-[#111e1e] w-[90%] h-[90%] pt-4 pl-4 pr-4 pb-20">
+            <div class="item-wrapper bg-[#182525] w-[100%] h-[100%] flex justify-center items-center p-2">
+                <div class="one  w-[25%] h-full overflow-y-scroll no-scroll text-white">
+                    <div class="flex justify-between items-center p-5">
+                        <div class="text-2xl cursor-pointer">Your Library</div>
+                        <div class="">
+                            <i class="ri-search-line cursor-pointer text-xl"></i>
+                            <i class="ri-add-line cursor-pointer text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="like-song-container w-[80%]  ">
+                        <div class="song-wrapper flex items-center  m-5">
+                            <img src="music-app-images/img1.jpg " class="inline-block w-10 h-10 rounded-[50%]" alt="">
+                            <div class="song-info flex flex-col mx-5 ">
+                                <span class="song-title text-sm">Liked Song</span>
+                                <span class="song-num text-sm">12,123 Songs</span>
+                            </div>
+                        </div>
+                        <div class="song-wrapper m-5 flex items-center">
+                            <img src="music-app-images/img2.png" class="inline-block w-10 h-10 rounded-[50%]" alt="">
+                            <div class="song-info flex flex-col mx-5 ">
+                                <span class="song-title text-sm">Liked Song</span>
+                                <span class="song-num text-sm">12,123 Songs</span>
+                            </div>
+                        </div>
+                        <div class="song-wrapper m-5 flex items-center">
+                            <img src="music-app-images/img2.png" class="inline-block w-10 h-10 rounded-[50%]" alt="">
+                            <div class="song-info flex flex-col mx-5 ">
+                                <span class="song-title text-sm">Liked Song</span>
+                                <span class="song-num text-sm">12,123 Songs</span>
+                            </div>
+                        </div>
+                        <!-- Add more song wrappers here -->
+                    </div>
+                </div>
+                <div class="two w-[40%] h-[98%] overflow-y-scroll no-scroll">
+                    <div class="about-brand">
+                        <div class="brand-name p-5 text-white text-5xl">Sonic <br> Dreams</div>
+                        <div class="brand-para px-5 text-white text-sm">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora aspernatur eaque dolorem
+                            hic nostrum dolore possimus saepe aliquam beatae iure.
+                        </div>
+
+                        <div class="music-list">
+                            <div class="music-handle-btns flex items-center mx-5 ">
+                                <div class="btn-play w-10 h-10 bg-white rounded-[50%] flex justify-center items-center mr-4">
+                                    <i class="ri-play-fill text-xl"></i>
+                                </div>
+                                <div class="btn-shuffle w-10 h-10 bg-white rounded-[50%] flex justify-center items-center">
+                                    <i class="ri-shuffle-fill text-lg"></i>
+                                </div>
+                                <!-- Add more button wrappers here -->
+                            </div>
+                            <hr class="w-[90%]">
+                            <div class="music-queue ">
+                                <div class="song-wrapper p-5 flex items-center">
+                                    <img src="music-app-images/img2.png" class="inline-block w-10 h-10 rounded-[50%]"
+                                        alt="">
+                                    <div class="song-info flex flex-col mx-5 text-white">
+                                        <span class="song-title text-sm">Liked Song</span>
+                                        <span class="song-num text-sm">12,123 Songs</span>
+                                    </div>
+                                </div>
+                                <!-- Add more song wrappers here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three bg-white   w-[35%] h-[98%] rounded-xl">
+                    <img src="music-app-images/img4.png" class=" h-[100%] w-[100%] rounded-xl" alt="">
+                </div>
+            </div>
+
+            <div class="music-handle flex justify-between items-center">
+                <div class="song-name">
+                    <div class="song-wrapper flex  items-center  m-5">
+                        <img src="music-app-images/img1.jpg " class="inline-block w-10 h-10 rounded-[50%]" alt="">
+                        <div class="song-info flex flex-col mx-5 ">
+                            <span class="song-title text-sm">Liked Song</span>
+                            <span class="song-num text-sm">12,123 Songs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <i class="ri-play-fill text-xl"></i>
+                    <input type="range" class="volume-slider">
+                    <button><i class="fa-solid fa-backward-step"></i></button>
+                    <button><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+                <div class="music-icons">
+                    <div class="icon-buttons flex items-center mx-5 ">
+                        <div class="btn-volume w-10 h-10 bg-white rounded-[50%] flex justify-center items-center mr-4">
+                            <i class="ri-volume-down-line"></i>
+                        </div>
+                        <div class="btn-playlist w-10 h-10 bg-white rounded-[50%] flex justify-center items-center mr-4">
+                            <i class="ri-play-list-fill"></i>
+                        </div>
+                        <div class="btn-movie w-10 h-10 bg-white rounded-[50%] flex justify-center items-center mr-4">
+                            <i class="ri-movie-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </div>
 </body>
+
 </html>
